@@ -1,7 +1,8 @@
 module.exports = {
     dbhost: 'mongodb://localhost/ufodata',
     port: 3131,
-    secret: 'cf7b8a2162024641f5498ffff3e80084',
+    //UFO Super Safe API Secret
+    secret: '759e1bcf265fce8dbc2a972c3b8ee633',
   defaultPicture: '/uploads/default.png',
-    apiRoute: '/apiv0'
+    apiRoute: '/api'
 };

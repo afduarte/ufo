@@ -1,0 +1,12 @@
+<div class="row">
+    <ng-include src="'views/menu.html'"></ng-include>
+    <div class="col-md-10">
+        <div class="row" ng-repeat="product in products">
+            <div class="col-sm-3 col-md-3">
+                <a href="#/collection" class="thumbnail">
+                    <img src="{{ product.thumb }}" class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

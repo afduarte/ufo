@@ -40,6 +40,7 @@ mongoose.connection.once('open', function() {
 
 	// Load the models
 	app.models = require('./models/index');
+	//app.models = require('./models/products');
 
 	// Load the routes
 	var routes = require('./routes');

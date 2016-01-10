@@ -18,7 +18,7 @@ angular
 
   ])
   .constant("CONFIG", {
-      "API_HOST": "http://127.0.0.1:3000/apiv0",
+      "API_HOST": "http://127.0.0.1:3131/api",
       "API_UPLOADS": "/uploads"
   })
   .config(function ($routeProvider, RestangularProvider, $httpProvider, CONFIG) {
@@ -71,8 +71,15 @@ angular
           templateUrl: 'views/account.html',
           controller: 'AccountCtrl'
       })
+      /*
+       * END OF USER RELATED ROUTES
+       */
+      .when('/products', {
+          templateUrl: 'views/products.html',
+          controller: 'Products'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/404'
       });
   })
 
@@ -98,6 +105,9 @@ angular
   })
   .factory('User', function(UserRestangular) {
       return UserRestangular.service('user');
+  })
+  .factory('Product', function(ProductRestangular) {
+      return ProductRestangular.service('product');
   })
 
   // END of Restangular factories
