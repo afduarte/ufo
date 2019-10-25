@@ -23,7 +23,7 @@
     "lodash": "^3.10.1",
     "method-override": "^2.3.5",
     "mkdirp": "^0.5.1",
-    "mongoose": "^4.2.5",
+    "mongoose": "^5.7.7",
     "mongoose-timestamp": "^0.4.0",
     "morgan": "^1.6.1",
     "path": "^0.12.7",
